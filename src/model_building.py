@@ -16,7 +16,7 @@ console_handler=logging.StreamHandler()
 console_handler.setLevel('DEBUG')
 
 log_dir_path=os.path.join(log_dir,'model_building.log')
-file_handler=logging.FileHandler()
+file_handler=logging.FileHandler(log_dir_path)
 file_handler.setLevel('DEBUG')
 
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')

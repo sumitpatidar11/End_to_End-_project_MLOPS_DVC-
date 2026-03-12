@@ -17,7 +17,7 @@ logger=logging.getLogger('Data_preprocessing')
 logger.setLevel('DEBUG')
 
 console_handler=logging.StreamHandler()
-console_handler.setLevel('DEBUD')
+console_handler.setLevel('DEBUG')
 
 log_dir_path=os.path.join(log_dir,'data_preprocessing.log')
 file_handler=logging.FileHandler(log_dir_path)
